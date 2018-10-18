@@ -12,12 +12,18 @@ public class Controller {
     String port;
 
     @RequestMapping("/hi")
-    public String home(@RequestParam String name) {
-        return "hi "+name+",i am from port:" +port;
+    public User home(@RequestParam String name) {
+        User user = new User();
+        user.setUsrId(1);
+        user.setUseName("hi "+name+",i am from port:" +port);
+        return user;
     }
 
     @RequestMapping("/hi2")
-    public String home2(@RequestParam String name) {
-        return "hi2 "+name+",i am from port:" +port;
+    public User home2(@RequestParam String name) {
+        User user = new User();
+        user.setUsrId(2);
+        user.setUseName("h2 "+name+",i am from port:" +port);
+        return user;
     }
 }
