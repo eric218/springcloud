@@ -18,12 +18,14 @@ public class Controller {
     @RequestMapping("/test")
     public String home(@RequestParam String name) {
         System.out.println("consumer"+name+",i am from port:" +port);
-        return helloService.feignToClientByName(name).getUseName();
+        User usr = helloService.feignToClientByName(name);
+        return usr.getUseName();
     }
 
     @RequestMapping("/test2")
     public String home2(@RequestParam String name) {
         System.out.println("consumer"+name+",i am from port:" +port);
-        return helloService.feignToClientByName2(name).getUseName();
+        User usr = helloService.feignToClientByName2(name);
+        return usr.getUseName();
     }
 }
