@@ -1,5 +1,5 @@
 server:
-  port: 7072
+  port: 9001
 eureka:
   instance:
     hostname: localhost
@@ -9,4 +9,4 @@ eureka:
 spring:
   application:
   # 需要指明spring.application.name,这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name,name 和client1里的name一致
-    name: service-hi
+    name: consumer
