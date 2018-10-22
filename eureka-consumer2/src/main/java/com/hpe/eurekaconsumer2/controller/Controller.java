@@ -1,6 +1,7 @@
-package com.hpe.eurekaconsumer.service.controller;
+package com.hpe.eurekaconsumer2.controller;
 
-import com.hpe.eurekaconsumer.service.HelloService;
+
+import com.hpe.eurekaconsumer2.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
